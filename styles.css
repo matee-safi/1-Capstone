@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.home {
+  background-image: linear-gradient(180deg, rgba(243, 243, 243, 0.808), rgb(248, 248, 248)), url('assets/background-1.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+nav img {
+  width: 2em;
+  height: 2.7em;
+  margin: 5px auto 30px 0;
+  cursor: pointer;
+}
+
+.nav-items {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  list-style: none;
+  height: 100vh;
+  width: 100%;
+  background: rgb(244, 244, 244) !important;
+  font-size: larger;
+  font-weight: 900;
+  gap: 50px;
+  z-index: 1;
+}
+
+.nav-items img {
+  width: 20px;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  cursor: pointer;
+}
+
+.nav-items li a {
+  text-decoration: none;
+  color: gray;
+}
+
+.open-nav {
+  visibility: visible;
+}
+
+.home h5 {
+  color: rgb(247, 72, 3);
+  font-size: larger;
+  font-weight: 400;
+  margin-left: 5px;
+  line-height: 10px;
+}
+
+.home h1 {
+  font-size: 2.4em;
+  font-weight: 900;
+  color: rgba(133, 46, 46, 1);
+  margin-left: 10px;
+  margin-bottom: 10px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(115deg, rgba(255, 0, 0, 0.8), rgba(255, 136, 0, 0.7), rgba(255, 0, 21, 0.8)), url(assets/background-1.jpeg);
+  background-position: center;
+}
+
+.description {
+  font-size: small;
+  border: 3px solid white;
+  padding: 15px;
+  margin: 10px;
+}
+
+.date {
+  color: rgb(82, 82, 82);
+  font-weight: 900;
+  line-height: 2;
+  font-size: 1.6em;
+  margin-bottom: 50px;
+}
+
+.main-program {
+  background-image: url(assets/sort.png);
+  background-size: 1.6em;
+  color: #fff;
+  background-color: #272931;
+  padding-top: 30px;
+}
+
+.hr {
+  border-bottom: 2px solid #7f2c36;
+  width: 2.4em;
+  color: #f00;
+  margin: 10px auto 30px;
+}
+
+.main-program-divs {
+  background-color: rgba(243, 243, 243, 0.1);
+  font-size: small;
+  gap: 1.4em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 90px;
+}
+
+.main-program-divs img {
+  width: 40px;
+  filter: invert(0.8);
+  align-self: center;
+}
+
+.main-program-divs h6 {
+  color: rgba(255, 81, 37, 0.9);
+  font-weight: 800;
+  font-size: medium;
+  width: 90px;
+  margin: auto;
+}
+
+.orange-button {
+  border-radius: 0;
+  background-color: #ff1c11;
+  color: #fff;
+  border-style: none;
+  padding: 1.5em 2.5em;
+  font-weight: 500;
+  margin: 40px auto;
+}
+
+.main-program-divs p {
+  align-self: center;
+  margin-bottom: 0;
+}
+
+.speaker-card img {
+  width: 12em;
+  height: 12em;
+}
+
+.image-container {
+  background: url(assets/speaker-bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-position-x: 2em;
+  justify-content: end;
+  padding: 0 !important;
+  padding-left: 3em !important;
+  padding-top: 1em !important;
+}
+
+.speaker-card {
+  font-size: 9px;
+  margin: 20px 0 20px;
+}
+
+.speaker-card hr {
+  width: 20px;
+}
+
+.freatured-speakers {
+  gap: 2em;
+}
+
+.more {
+  border: 1px solid rgb(206, 206, 206);
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  width: 94%;
+  font-size: 0.7em;
+  color: #6a6b6e;
+  font-weight: 500;
+  gap: 10px;
+}
+
+.more img {
+  width: 10px;
+  align-self: center;
+  filter: invert(50%) sepia(100%) saturate(3207%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
