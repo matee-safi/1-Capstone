@@ -55,6 +55,7 @@ nav img {
 }
 
 .open-nav {
+  transition: all 0.4s;
   visibility: visible;
   height: 100vh;
   font-size: large;
