@@ -26,7 +26,7 @@ nav img {
   justify-content: center;
   align-items: center;
   padding: 0;
-  opacity: 0.2  ;
+  opacity: 0.2;
   position: fixed;
   top: 0;
   right: 0;
@@ -112,10 +112,10 @@ nav img {
 }
 
 .hr-orange {
-    border-bottom: 1px solid rgb(255, 115, 0);
-    width: 2.4em;
-    margin: 10px auto 30px;
-  }
+  border-bottom: 1px solid rgb(255, 115, 0);
+  width: 2.4em;
+  margin: 10px auto 30px;
+}
 
 .main-program-divs {
   background-color: rgba(243, 243, 243, 0.1);
@@ -205,55 +205,55 @@ nav img {
 }
 
 .travel-image-india {
-    height: 14em !important;
-    color: #fff;
-    background-image: linear-gradient(rgba(255, 0, 21, 0.7), rgba(156, 0, 13, 0.7)), url('assets/taj-mahal.jpg');
-    background-size: 100% 100%;
+  height: 14em !important;
+  color: #fff;
+  background-image: linear-gradient(rgba(255, 0, 21, 0.7), rgba(156, 0, 13, 0.7)), url('assets/taj-mahal.jpg');
+  background-size: 100% 100%;
 }
 
 .travel-image-pakistan {
-    height: 14em !important;
-    color: #fff;
-    background-image: linear-gradient(rgba(255, 0, 21, 0.7), rgba(156, 0, 13, 0.7)), url('assets/pakistan.jpg');
-    background-size: 100% 100%;
+  height: 14em !important;
+  color: #fff;
+  background-image: linear-gradient(rgba(255, 0, 21, 0.7), rgba(156, 0, 13, 0.7)), url('assets/pakistan.jpg');
+  background-size: 100% 100%;
 }
 
 .partner {
-    background-color: #414246;
+  background-color: #414246;
 }
 
 .row-1 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .about {
-    background-image: linear-gradient(0deg, rgba(243, 243, 243, 0.8), rgba(248, 248, 248, 0.8)), url('assets/Home-bg.webp');
-    background-repeat: no-repeat;
-    background-position-x: middle;
-    background-size: cover;
+  background-image: linear-gradient(0deg, rgba(243, 243, 243, 0.8), rgba(248, 248, 248, 0.8)), url('assets/Home-bg.webp');
+  background-repeat: no-repeat;
+  background-position-x: middle;
+  background-size: cover;
 }
 
 .about h1 {
-    font-weight: 800;
-    font-size: 2.5em;
-    color: #ff1c11;
+  font-weight: 800;
+  font-size: 2.5em;
+  color: #ff1c11;
 }
 
 .fs-tiny {
-    font-size: 0.8em;
+  font-size: 0.8em;
 }
 
 .partner img {
-    width: 3em;
-    margin-left: 15px;
-    margin-right: 15px;
+  width: 3em;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .footer-div {
-    gap: 1em;
+  gap: 1em;
 }
 
 .footer-div p {
-    font-size: 0.6em;
-    gap: 2em;
+  font-size: 0.6em;
+  gap: 2em;
 }
