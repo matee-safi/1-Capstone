@@ -1,3 +1,4 @@
+// Speaker cards
 const speakers = [
   {
     Id: 0,
@@ -8,7 +9,7 @@ const speakers = [
   },
   {
     Id: 1,
-    Name: 'Ben Shabiro',
+    Name: 'Ben Shapiro',
     Image: 'assets/Ben-Shapiro.jpg',
     Job: 'Public Speaker',
     Acheivements: 'Ben Shapiro is a conservetive political speaker he is currently working with daily wire.',
@@ -55,6 +56,7 @@ while (i < 2) {
   i += 1;
 }
 
+// Current Date
 const currentDate = new Date();
 const yyyy = currentDate.getFullYear();
 const mm = currentDate.getMonth();
@@ -62,17 +64,6 @@ const dd = currentDate.getDate();
 const days = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
 const dayName = days[currentDate.getDay()];
 document.querySelector('.date').innerHTML = `${yyyy}.${mm}.${dd}(${dayName}) ~ 16(FRI)`;
-
-// Hamburger button functionality
-const hamburgerButton = document.querySelector('.hamburger-btn');
-const closeCross = document.querySelector('.close-cross');
-
-function toggleMenu() {
-  document.querySelector('.nav-items').classList.toggle('open-nav');
-}
-
-hamburgerButton.addEventListener('click', toggleMenu);
-closeCross.addEventListener('click', toggleMenu);
 
 // More button functionality
 const moreButton = document.querySelector('.more');
