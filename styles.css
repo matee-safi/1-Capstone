@@ -28,20 +28,21 @@ nav img {
   padding: 0;
   opacity: 0.2;
   position: fixed;
-  top: 0;
+  top: 40px;
   right: 0;
   list-style: none;
   height: 0;
   width: 100%;
-  background: rgb(244, 244, 244) !important;
+  background: #d3d3d3 !important;
   font-size: 0;
   font-weight: 900;
   gap: 0;
   z-index: 1;
   transition: all 0.4s;
+  box-shadow: 0 5px 10px rgba(214, 214, 214, 0.829);
 }
 
-.nav-items img {
+.close-cross {
   width: 20px;
   position: absolute;
   left: 30px;
@@ -51,7 +52,7 @@ nav img {
 
 .nav-items li a {
   text-decoration: none;
-  color: gray;
+  color: #272a31;
 }
 
 .open-nav {
@@ -61,10 +62,11 @@ nav img {
   font-size: large;
   gap: 50px;
   opacity: 1;
+  top: 0;
 }
 
 .home h5 {
-  color: rgb(247, 72, 3);
+  color: #ec5242;
   font-size: larger;
   font-weight: 400;
   margin-left: 5px;
@@ -113,12 +115,12 @@ nav img {
 }
 
 .hr-orange {
-  border-bottom: 1px solid rgb(255, 115, 0);
+  border-bottom: 1px solid #ec5242;
   width: 2.4em;
   margin: 10px auto 30px;
 }
 
-.main-program-divs {
+#main-program-divs {
   background-color: rgba(243, 243, 243, 0.1);
   font-size: small;
   gap: 1.4em;
@@ -127,14 +129,40 @@ nav img {
   height: 90px;
 }
 
-.main-program-divs img {
+#main-program-divs:hover {
+  outline: 2px solid #fff;
+}
+
+.footer-div img {
+  max-width: 200px;
+  margin-left: 50px;
+}
+
+.partner img {
+  width: 3em;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.more img {
+  width: 10px;
+  align-self: center;
+  filter: invert(50%) sepia(100%) saturate(3207%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+
+.speaker-card img {
+  width: 12em;
+  height: 12em;
+}
+
+#main-program-divs img {
   width: 40px;
   filter: invert(0.8);
   align-self: center;
 }
 
-.main-program-divs h6 {
-  color: rgba(255, 81, 37, 0.9);
+#main-program-divs h6 {
+  color: #ec5242;
   font-weight: 800;
   font-size: medium;
   width: 90px;
@@ -143,7 +171,7 @@ nav img {
 
 .orange-button {
   border-radius: 0;
-  background-color: #ff1c11;
+  background-color: #fc4a03f1;
   color: #fff;
   border-style: none;
   padding: 1.5em 2.5em;
@@ -151,14 +179,14 @@ nav img {
   margin: 40px auto;
 }
 
-.main-program-divs p {
-  align-self: center;
-  margin-bottom: 0;
+.footer-div p {
+  font-size: 0.6em;
+  gap: 2em;
 }
 
-.speaker-card img {
-  width: 12em;
-  height: 12em;
+#main-program-divs p {
+  align-self: center;
+  margin-bottom: 0;
 }
 
 .image-container {
@@ -175,17 +203,26 @@ nav img {
 .speaker-card {
   font-size: 9px;
   margin: 20px 0 20px;
+  display: none !important;
+}
+
+.visible {
+  display: flex !important;
 }
 
 .speaker-card hr {
   width: 20px;
 }
 
-.freatured-speakers {
-  gap: 2em;
+.speaker-job {
+  color: #ec5242;
+  font-size: 1.3em;
+  font-style: italic;
 }
 
 .more {
+  padding-top: 13px;
+  padding-bottom: 13px;
   border: 1px solid rgb(206, 206, 206);
   background-color: white;
   margin-left: auto;
@@ -193,16 +230,10 @@ nav img {
   display: flex;
   justify-content: center;
   width: 94%;
-  font-size: 0.7em;
+  font-size: 0.8em;
   color: #6a6b6e;
   font-weight: 500;
   gap: 10px;
-}
-
-.more img {
-  width: 10px;
-  align-self: center;
-  filter: invert(50%) sepia(100%) saturate(3207%) hue-rotate(0deg) brightness(100%) contrast(100%);
 }
 
 .travel-image-india {
@@ -210,6 +241,13 @@ nav img {
   color: #fff;
   background-image: linear-gradient(rgba(255, 0, 21, 0.7), rgba(156, 0, 13, 0.7)), url('assets/taj-mahal.jpg');
   background-size: 100% 100%;
+  max-width: 40em !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.travel-image-india:hover {
+  background-image: linear-gradient(rgba(255, 0, 21, 0), rgba(0, 156, 60, 0)), url('assets/taj-mahal.jpg');
+  color: transparent;
 }
 
 .travel-image-pakistan {
@@ -217,6 +255,13 @@ nav img {
   color: #fff;
   background-image: linear-gradient(rgba(255, 0, 21, 0.7), rgba(156, 0, 13, 0.7)), url('assets/pakistan.jpg');
   background-size: 100% 100%;
+  max-width: 40em !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.travel-image-pakistan:hover {
+  background-image: url('assets/pakistan.jpg');
+  color: transparent;
 }
 
 .partner {
@@ -244,17 +289,282 @@ nav img {
   font-size: 0.8em;
 }
 
-.partner img {
-  width: 3em;
-  margin-left: 15px;
-  margin-right: 15px;
-}
-
 .footer-div {
   gap: 1em;
 }
 
-.footer-div p {
-  font-size: 0.6em;
-  gap: 2em;
+.logo-container {
+  visibility: hidden;
+}
+
+.nav-logo {
+  width: 4em;
+}
+
+.partners {
+  display: none;
+}
+
+#hidden {
+  display: none !important;
+}
+
+.nav-links {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav-items {
+    visibility: visible;
+    height: 12vh;
+    font-size: small;
+    opacity: 1;
+    gap: 5%;
+    flex-direction: row;
+    background: #fff !important;
+  }
+
+  .close-cross {
+    visibility: hidden;
+  }
+
+  .hamburger-container {
+    visibility: hidden;
+  }
+
+  .li-1 a,
+  .li-6 a {
+    color: rgb(252, 37, 37) !important;
+  }
+
+  .logo-container {
+    margin-right: 15%;
+    visibility: visible;
+  }
+
+  .li-6 {
+    border: 3px solid red;
+    padding: 0.5em;
+  }
+
+  #home-section {
+    padding: 8% 10% !important;
+    font-size: 3em;
+  }
+
+  .travel-img-container div {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 30%;
+    height: 200px;
+  }
+
+  #home-section div {
+    max-width: 60%;
+    margin-left: 0;
+    font-size: 0.3em;
+  }
+
+  .date {
+    font-size: 2rem;
+  }
+
+  .program-container {
+    display: flex;
+    justify-content: center !important;
+    width: 80%;
+    margin: 3% auto;
+  }
+
+  #main-program-divs {
+    max-width: 25%;
+    height: 20em;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0.15% !important;
+    box-sizing: border-box;
+  }
+
+  .logo-section h5 br {
+    display: none;
+  }
+
+  body p {
+    font-size: 1em !important;
+  }
+
+  #main-program-divs p,
+  #main-program-divs h6 {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #main-program-divs p {
+    font-size: 1em;
+  }
+
+  #main-program-divs h6 {
+    font-size: 1.5em;
+  }
+
+  .main-program h5 {
+    font-size: 2em;
+    margin-top: 10px;
+  }
+
+  .hr,
+  .hr-orange {
+    width: 4%;
+  }
+
+  .orange-button {
+    padding: 0;
+    background-color: transparent;
+    margin-bottom: 90px;
+    text-decoration: underline grey 3px;
+  }
+
+  #freatured-speakers {
+    padding: 20px 10% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+  }
+
+  .speaker-card {
+    display: flex !important;
+    max-width: 50%;
+    align-items: center;
+    background-size: 100%;
+  }
+
+  .more {
+    display: none;
+  }
+
+  #featured-speakers {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    padding: 40px 15%;
+  }
+
+  .nav-links li img {
+    width: 20px;
+  }
+
+  .partners .text-secondary div img {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+
+  #featured-speakers img {
+    width: 90%;
+    height: 100%;
+  }
+
+  #featured-speakers p {
+    font-size: 1.3em;
+  }
+
+  .partners {
+    display: block;
+    gap: 40px;
+  }
+
+  #hidden {
+    display: flex !important;
+    background: linear-gradient(rgb(238, 229, 229), rgb(236, 236, 236));
+    padding-left: 10% !important;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 1.5em;
+  }
+
+  #hidden img {
+    width: 25%;
+    margin-right: 5%;
+  }
+
+  .featured-speakers-hx {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 50px;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    display: flex;
+    height: 40px;
+    width: 100%;
+    align-items: center;
+    list-style: none;
+    justify-content: flex-end;
+    background-color: #313131;
+    color: #fff;
+    padding-right: 10%;
+    gap: 3%;
+    font-weight: bold;
+  }
+
+  .about h1 {
+    font-size: 4em;
+    margin-top: 90px;
+    border-bottom: 2px 20px solid orange;
+  }
+
+  .about h1::after {
+    content: "";
+    border: 2px solid orange;
+    display: block;
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+
+  .description {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .logo-section h5 {
+    font-size: 2em;
+  }
+
+  .past-travels h5 {
+    font-size: 2em;
+  }
+
+  .travel-img-container {
+    height: 300px !important;
+    width: 100% !important;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    display: flex;
+    flex-direction: row !important;
+  }
+
+  .partner-about {
+    display: none;
+  }
+
+  #footer-div-about {
+    color: #fff;
+    background: #272a31;
+    height: 200px;
+    padding-left: 15% !important;
+  }
+
+  #footer-div-about img {
+    width: 200px;
+    height: 90px !important;
+    filter: invert(1);
+  }
+
+  .about h5 {
+    display: none;
+  }
 }

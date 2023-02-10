@@ -14,64 +14,98 @@
     </head>
     <body>
         <main>
-            <section class="home p-2">
+            <section class="home p-2" id="home-section">
                 <nav class="navbar navbar-expand-sm">
-                    <div class="container-fluid">
+                    <div class="container-fluid hamburger-container">
                         <img class="hamburger-btn" src="assets/menu-icon-png-3-lines-10.jpg" alt="Hamburger menu">
                     </div>
                 </nav>
                     <h5>"Hello Travelers"</h5>
-                    <h1>Afghan<br>Travel Agency</h1>
-                    <div class="description container-fluid">
+                    <h1>Afghan Travel<br>Agency</h1>
+                    <div class="ps-4 pe-4 description container-fluid">
                     <p>We make sure you travel with ease of mind<br>If you need help with any challenges of traveling including getting a passport, visa, plane ticket, bank statement and etc... you're in the right place</p>
                     </div>
-                    <h4 class="date">Current date</h4>
+                    <h4 class="date"></h4>
             </section>
+            <ul class="nav-links">
+                <li><img src="assets/twitter.png" alt="twitter"></li>
+                <li><img src="assets/facebook-app-symbol.png" alt="facebook"></li>
+                <li>English</li>
+                <li>My Page</li>
+                <li>Logout</li>
+            </ul>
             <ul class="nav-items">
                 <img src="assets/close.png" alt="cross" class="close-cross">
-                <li><a href="About.html">About</a></li>
+                    <div class="logo-container d-inline">
+                        <a href="Home.html"><img src="assets/travel.png" alt="Logo" class="d-inline nav-logo"></a>
+                        <p class="d-inline">ATA</p>
+                    </div>
+                <li class="li-1"><a href="About.html">About</a></li>
                 <li><a href="">Program</a></li>
                 <li><a href="">Join</a></li>
                 <li><a href="">Sponser</a></li>
                 <li><a href="">News</a></li>
+                <li class="li-6"><a href="">CC Campaign</a></li>
             </ul>
             <section class="main-program">
                 <h5 class="text-center">Main Program</h5>
                 <div class="hr"></div>
-                <div class="main-program-divs d-flex ps-3 pe-3 ms-3 me-3 mb-2">
-                    <img src="assets/passport.png" alt="passport">
-                    <h6>passport</h6>
-                    <p>Online form application services for getting your passport in no time</p>
-            </div>
-                <div class="main-program-divs d-flex ps-3 pe-3 ms-3 me-3 mb-2">
-                        <img src="assets/visa.png" alt="Visa">
-                        <h6>Visa</h6>
-                        <p>Visa application services for more than 10 countries</p>
-                </div>
-                <div class="main-program-divs d-flex ps-3 pe-3 ms-3 me-3 mb-2">
-                    <img src="assets/tickets.png" alt="Tickets">
-                    <h6>Tickets</h6>
-                    <p>We take care of the tickets so you don't have to worry about a thing</p>
-                </div>
-                <div class="main-program-divs d-flex ps-3 pe-3 ms-3 me-3 mb-2">
-                    <img src="assets/bank.png" alt="Bank">
-                    <h6>Bank Statement</h6>
-                    <p>Don't have a bank statement, no problem we will take care of that</p>
-                </div>
-                <div class="main-program-divs d-flex ps-3 pe-3 ms-3 me-3 mb-2">
-                    <img src="assets/patient.png" alt="passport">
-                    <h6>Medical Visa</h6>
-                    <p>Including all the medical files you need to apply for a medical visa</p>
+                <div class="program-container">
+                    <div id="main-program-divs" class=" d-flex ps-3 pe-3 ms-3 me-3 mb-2">
+                        <img src="assets/passport.png" alt="passport">
+                        <h6>passport</h6>
+                        <p>Online form application services for getting your passport in no time</p>
+                    </div>
+                    <div id="main-program-divs" class=" d-flex ps-3 pe-3 ms-3 me-3 mb-2">
+                            <img src="assets/visa.png" alt="Visa">
+                            <h6>Visa</h6>
+                            <p>Visa application services for more than 10 countries</p>
+                    </div>
+                    <div id="main-program-divs" class=" d-flex ps-3 pe-3 ms-3 me-3 mb-2">
+                        <img src="assets/tickets.png" alt="Tickets">
+                        <h6>Tickets</h6>
+                        <p>We take care of the tickets so you don't have to worry about a thing</p>
+                    </div>
+                    <div id="main-program-divs" class=" d-flex ps-3 pe-3 ms-3 me-3 mb-2">
+                        <img src="assets/bank.png" alt="Bank">
+                        <h6>Bank Statement</h6>
+                        <p>Don't have a bank statement, no problem we will take care of that</p>
+                    </div>
+                    <div id="main-program-divs" class=" d-flex ps-3 pe-3 ms-3 me-3 mb-2">
+                        <img src="assets/patient.png" alt="passport">
+                        <h6>Medical Visa</h6>
+                        <p>Including all the medical files you need to apply for a medical visa</p>
+                    </div>
                 </div>
                 <div class="text-center">
-                    <button class="orange-button">Join Afghan Travel Agency</button>
+                    <button class="orange-button">SEE THE WHOLE PROGRAM</button>
                 </div>
             </section>
-            <section class="featured-speakers mt-4 mb-4">
-                <h5 class="text-center">Featured Speakers</h5>
+            <section class="mt-4 mb-4">
+                <h5 class="featured-speakers-hx text-center">Featured Speakers</h5>
                 <div class="hr-orange"></div>
+                <div id="featured-speakers">
+
+                </div>
             </section>
-            <button class="more pt-2 pb-2 mb-4 mt-4"><span class="more-text">MORE</span><img class="arrow" src="assets/arrow-down-sign-to-navigate.png" alt="Arrow down"></button>
+            <button class="more mb-4 mt-4"><span class="more-text">MORE</span><img class="arrow" src="assets/arrow-down-sign-to-navigate.png" alt="Arrow down"></button>
+            <section class="text-center partners partner pb-4 text-white">
+                <h4 class="pt-4">Partner</h4>
+                <div class="hr"></div>
+                <div class="text-secondary">
+                    <div class="row-1 d-flex justify-content-center">
+                        <img src="assets/firefox.png" alt="mozilla">
+                        <img src="assets/google.png" alt="google">
+                        <img src="assets/airbnb.png" alt="airbnb">
+                        <img src="assets/meta.png" alt="meta">
+                        <img src="assets/tesla.png" alt="tesla">
+                    </div>
+                </div>
+            </section>
+            <div id="hidden" class="footer-div pt-3 pb-3 ps-4 pe-4 d-flex align-items-center">
+                <img class="col-6 h-25" src="assets/Creative-Commons-CC-Logo.png" alt="cckorea logo">
+                <p class="col-6 m-0 text-start">2023 Creative Commons Korea.<br>Some Rights Reserved.</p>
+            </div>
         </main>
     <script src="script.js"></script>
     <script src="menuFunction.js"></script>
