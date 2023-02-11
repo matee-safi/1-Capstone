@@ -35,25 +35,47 @@ const speakers = [
     Job: 'Top G',
     Acheivements: 'Emory Andrew Tate III is a British-American social media personality, businessman, and former professional kickboxer.',
   },
+  {
+    Id: 5,
+    Name: 'Benjamin Netanyahu',
+    Image: 'assets/benjamin-netanyahu.jpg',
+    Job: 'Prime Minister of Israel',
+    Acheivements: 'Benjamin "Bibi" Netanyahu is an Israeli politician who has been serving as the prime minister of Israel since December 2022. He is the chairman of the Likud party.',
+  },
 ];
 
-let i = 0;
-while (i < 2) {
-  const card = document.createElement('div');
-  card.classList.add('speaker-card', 'row', 'container-fluid', `featured-speaker-${speakers[i].Id}`);
-  card.innerHTML = `
-    <div class="col-5 image-container">
-        <img src="${speakers[i].Image}" alt="${speakers[i].Name}" class="speaker-card-img">
-    </div>
-    <div class="col-7">
-        <h6>${speakers[i].Name}</h5>
-        <p class="text-danger">${speakers[i].Job}<p>
-        <hr>
-        <P>${speakers[i].Acheivements}</P>
-    </div>
-    `;
-  document.querySelector('.featured-speakers').appendChild(card);
-  i += 1;
+for (let i = 0; i < speakers.length; i += 1) {
+  if (i < 2) {
+    const card = document.createElement('div');
+    card.classList.add('visible', 'speaker-card', 'row', 'container-fluid', `featured-speaker-${speakers[i].Id}`);
+    card.innerHTML = `
+      <div class="col image-container">
+          <img src="${speakers[i].Image}" alt="${speakers[i].Name}" class="speaker-card-img">
+      </div>
+      <div class="col">
+          <h6>${speakers[i].Name}</h5>
+          <p class="speaker-job">${speakers[i].Job}<p>
+          <hr>
+          <P>${speakers[i].Acheivements}</P>
+      </div>
+      `;
+    document.querySelector('#featured-speakers').appendChild(card);
+  } else {
+    const card = document.createElement('div');
+    card.classList.add('speaker-card', 'row', 'container-fluid', `featured-speaker-${speakers[i].Id}`);
+    card.innerHTML = `
+      <div class="col image-container">
+          <img src="${speakers[i].Image}" alt="${speakers[i].Name}" class="speaker-card-img">
+      </div>
+      <div class="col">
+          <h6>${speakers[i].Name}</h5>
+          <p class="speaker-job">${speakers[i].Job}<p>
+          <hr>
+          <P>${speakers[i].Acheivements}</P>
+      </div>
+      `;
+    document.querySelector('#featured-speakers').appendChild(card);
+  }
 }
 
 // Current Date
@@ -68,53 +90,19 @@ document.querySelector('.date').innerHTML = `${yyyy}.${mm}.${dd}(${dayName}) ~ 1
 // More button functionality
 const moreButton = document.querySelector('.more');
 const moreText = document.querySelector('.more-text');
+const cards = document.querySelectorAll('.speaker-card');
 
 function showMore() {
-  let i = 2;
-  while (i < speakers.length) {
-    const card = document.createElement('div');
-    card.classList.add('speaker-card', 'row', 'container-fluid');
-    card.innerHTML = `
-        <div class="col-5 image-container">
-            <img src="${speakers[i].Image}" alt="${speakers[i].Name}">
-        </div>
-        <div class="col-7">
-            <h6>${speakers[i].Name}</h5>
-            <p class="text-danger">${speakers[i].Job}<p>
-            <hr>
-            <P>${speakers[i].Acheivements}</P>
-        </div>
-        `;
-    document.querySelector('.featured-speakers').appendChild(card);
-    i += 1;
+  for (let i = 2; i < cards.length; i += 1) {
+    cards[i].classList.toggle('visible');
   }
   moreText.textContent = 'LESS';
   document.querySelector('.arrow').src = 'assets/up-arrow.png';
 }
 
 function showLess() {
-  let i = 0;
-  while (i < 5) {
-    document.querySelector('.speaker-card').remove();
-    i += 1;
-  }
-  i = 0;
-  while (i < 2) {
-    const card = document.createElement('div');
-    card.classList.add('speaker-card', 'row', 'container-fluid');
-    card.innerHTML = `
-        <div class="col-5 image-container">
-            <img src="${speakers[i].Image}" alt="${speakers[i].Name}">
-        </div>
-        <div class="col-7">
-            <h6>${speakers[i].Name}</h5>
-            <p class="text-danger">${speakers[i].Job}<p>
-            <hr>
-            <P>${speakers[i].Acheivements}</P>
-        </div>
-        `;
-    document.querySelector('.featured-speakers').appendChild(card);
-    i += 1;
+  for (let i = 2; i < cards.length; i += 1) {
+    cards[i].classList.toggle('visible');
   }
   moreText.textContent = 'MORE';
   document.querySelector('.arrow').src = 'assets/arrow-down-sign-to-navigate.png';

@@ -28,7 +28,7 @@ After you're finished please remove all the comments and instructions!
 <div align="center">
   <br/>
 
-  <h3><b>Matee Safi - Capstone Project (HTML and CSS)</b></h3>
+  <h3><b>Afghan Travel Agency</b></h3>
 
 </div>
 
@@ -55,10 +55,10 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Portfolio] <a name="about-project"></a>
+# 📖 [Travel] <a name="about-project"></a>
 
 
-**[Matee Safi - Portfolio]** This is the capstone project of the first module which i've made from scratch.
+**[Matee Safi - Capstone - 1]** This is the capstone project of the first module which i've made from scratch.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -81,7 +81,7 @@ After you're finished please remove all the comments and instructions!
 <details>
   <summary>Javascript</summary>
   <ul>
-    <li><a href="https://en.wikipedia.org/wiki/Javascript">CSS</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Javascript">JS</a></li>
   </ul>
 </details>
 
@@ -89,9 +89,53 @@ After you're finished please remove all the comments and instructions!
 
 <!-- LIVE DEMO -->
 
+## 🚀 Video presentation Demo <a name="Video-presentation"></a>
+
+- Click here to [see the video](https://www.loom.com/share/7cb39e1c249443f7840056628a918730)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- LIVE DEMO -->
+
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Click here to [View page](#)
+- Click here to [View page](https://matee-safi.github.io/1-Capstone/Home.html)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+
+- <code>sudo install node.js</code>
+
+### Setup
+
+Clone this repository to your desired folder:
+
+- <code>git clone https://github.com/matee-safi/1-Capstone.git</code>
+
+### Usage
+
+To run the project, execute the following command:
+
+- <code>code .</code>
+- Run live server
+
+
+### Run tests
+
+To run tests, run the following command:
+
+- <code>npx hint .</code>
+- <code>npx eslint .</code>
+- <code>npx stylelint "**/*.{css,scss}"</code>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -138,8 +182,7 @@ If you like this project share it with your friends and show your support by fol
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-
-I would like to thank all of you for your support.
+- The original design was built by <a href="https://www.behance.net/adagio07">Cindy Shin</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
