@@ -97,6 +97,9 @@ nav img {
   font-weight: 900;
   line-height: 2;
   font-size: 1.6em;
+}
+
+.location {
   margin-bottom: 50px;
 }
 
@@ -157,8 +160,11 @@ nav img {
 
 #main-program-divs img {
   width: 40px;
+  height: 40px;
   filter: invert(0.8);
   align-self: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #main-program-divs h6 {
@@ -311,6 +317,7 @@ nav img {
 
 .nav-links {
   display: none;
+  z-index: 1;
 }
 
 @media only screen and (min-width: 768px) {
@@ -377,13 +384,17 @@ nav img {
   }
 
   #main-program-divs {
-    max-width: 25%;
+    width: 25%;
     height: 20em;
-    flex-direction: column;
-    justify-content: center !important;
-    align-items: center !important;
     margin: 0.15% !important;
     box-sizing: border-box;
+    display: grid !important;
+    grid-template-rows: 60px 50px 60px !important;
+  }
+
+  #main-program-divs h6 {
+    font-size: 1.7em !important;
+    font-weight: 900 !important;
   }
 
   .logo-section h5 br {
@@ -402,10 +413,6 @@ nav img {
 
   #main-program-divs p {
     font-size: 1em;
-  }
-
-  #main-program-divs h6 {
-    font-size: 1.5em;
   }
 
   .main-program h5 {

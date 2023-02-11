@@ -28,7 +28,7 @@ After you're finished please remove all the comments and instructions!
 <div align="center">
   <br/>
 
-  <h3><b>Matee Safi - Capstone Project (HTML and CSS and JS)</b></h3>
+  <h3><b>Afghan Travel Agency</b></h3>
 
 </div>
 
@@ -89,9 +89,18 @@ After you're finished please remove all the comments and instructions!
 
 <!-- LIVE DEMO -->
 
+## 🚀 Video presentation Demo <a name="Video-presentation"></a>
+
+- Click here to [see the video](https://www.loom.com/share/cb89c40eb6b648a9b18c8f8472570f2a)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- LIVE DEMO -->
+
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Click here to [View page](#)
+- Click here to [View page](https://matee-safi.github.io/1-Capstone/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -173,8 +182,7 @@ If you like this project share it with your friends and show your support by fol
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-
-I would like to thank all of you for your support.
+- The original design was built by <a href="https://www.behance.net/adagio07">Cindy Shin</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
